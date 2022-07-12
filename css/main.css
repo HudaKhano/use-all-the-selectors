@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #fdf6e3;
 }
@@ -6,7 +14,7 @@ header, footer {
   font-size: 1.5rem;
 }
 
-ul, nav {
+nav ul {
   font-family: sans-serif;
 }
 
@@ -22,23 +30,23 @@ ul, nav {
   color: #93a1a1;
 }
 
-div {
+.wrapper > .dfn {
   background-color: #b58900;
 }
 
-div strong:nth-child(2) {
+.dfn + strong {
   color: #fff;
 }
 
-li > a {
+a {
   background-color: #719e07;
 }
 
-ul li {
+.no-highlight {
   background-color: #fdf6e3;
 }
 
-[rel="external"] {
+a[rel="external"] {
   background-color: #2694d8;
 }
 
@@ -58,6 +66,6 @@ ol li:last-child {
   background-color: #586e75;
 }
 
-.types li:nth-child(3rd) {
+.types li:nth-child(3n) {
   background-color: #d04b16;
 }
